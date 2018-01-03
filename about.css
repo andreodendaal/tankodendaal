@@ -1,0 +1,40 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 40px auto auto 40px;
+}
+
+.header {
+    grid-column: 1 / -1;
+}
+
+.content11 {
+    grid-column: 1 / 2
+
+}
+
+.content12 {
+    grid-column: 2 / 3;
+
+}
+.content13 {
+    grid-column: 3 / 4;
+}
+
+.content14 {
+    grid-column: 4 / 5;
+}
+
+.content15{
+    grid-column: 5 / 6;
+}
+
+
+.content21{
+    grid-column: 1 / -1;
+}
+.footer {
+    grid-column: 1 / -1;
+}
