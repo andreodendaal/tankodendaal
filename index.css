@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 80px 1fr 80px;
     grid-column-gap: 10px;
+    font-family: 'Special Elite', cursive;
+    font-size: 1em;
 }
 
 .article > * {
@@ -9,9 +11,20 @@
     min-width: 0;
 }
 
+.article h1{
+    text-align: center;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.article p{
+
+    margin: 10px;
+
+}
 .article > figure {
     grid-column: 1 / -1;
-    margin: 20px 0;
+    margin: 2px 0;
 }
 
 .article > .aside {
@@ -27,16 +40,12 @@ html, body {
     margin: 0;
     padding: 0;
     line-height: 1.4;
+
 }
 
 body {
     margin: 0 10px;
-}
 
-img {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .line-numbers a {
@@ -60,8 +69,16 @@ pre > code {
     padding: 0;
 }
 
-figure {
-    margin: 0;
+.figure {
+    vertical-align:middle;
+    text-align:center;
+    padding: 5px 5px 10px 5px;
+}
+
+.img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figure figcaption {
@@ -69,11 +86,16 @@ figure figcaption {
     font-style: italic;
     font-size: 0.8em;
 }
-/*footer .container {*/
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*padding: 2em 0;*/
-    /*color: dimgray;*/
-    /*font-size: 1.5em;*/
-    /*font-family: 'Special Elite', cursive;*/
-/*}*/
+footer .container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(3, auto);
+    margin: 0 10px;
+    font-family: 'Special Elite', cursive;
+    font-size: 1em;
+ }
+
+.container #right{
+    text-align: right;
+}

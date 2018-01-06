@@ -1,38 +1,74 @@
 .container {
-    height: 100%;
     display: grid;
+    height: 100%;
     grid-gap: 3px;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: 40px auto auto 40px;
-}
-
-.header {
-    grid-column: 1 / -1;
-}
-
-.content11 {
-    grid-column: 1 / 2
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: auto auto auto auto auto;
+    font-family: 'Special Elite', cursive;
 
 }
+.container > div:nth-child(1n) {
+    background-color: white;
+    //border: solid black 1px;
+    display: block;
+}
 
-.content12 {
+.nav{
+    grid-column: 1 / 2;
+}
+
+.centre{
+     grid-column: 2 / -2;
+    text-align: center;
+ }
+
+.right{
+    grid-column: -2 / -1;
+}
+
+.headers{
+
+}
+
+.hed p{
+
+}
+
+.hed h2{
+    text-align: center;
+    margin: 2px;
+}
+.block{
+    padding: 0px 10px;
+
+}
+.a1 {
+    grid-column: 1 / 2;
+
+
+}
+
+.a2 {
     grid-column: 2 / 3;
 
-}
-.content13 {
+   }
+
+.a3 {
     grid-column: 3 / 4;
 }
 
-.content14 {
+.a4 {
     grid-column: 4 / 5;
 }
 
-.content15{
-    grid-column: 5 / 6;
+.a5{
+     grid-column: 5 / 6;
+ }
+.a6{
+    grid-column: 6 / 7;
 }
 
-
-.content21{
+.b1{
     grid-column: 1 / -1;
 }
 .footer {
