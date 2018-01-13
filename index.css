@@ -1,9 +1,145 @@
+.heading {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-align: center;
+//height: 75%;
+    width: 100%;
+    margin: 0;
+//font-size: 1.5em;
+    background-image: url("img/HOMOdendaal_Mustang_Web.jpg");
+    background-repeat: no-repeat;
+    /*background-size: 100%;*/
+    background-size: contain;
+    background-position: center center;
+}
+
+.embed_pic{
+
+    grid-column: 1 / -1;
+    height: 350px;
+    width: 100%;
+    margin: 20px 0 0 0;
+    //border: solid black 1px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+
+}
+#mustang{
+    background-image: url("img/mustang_paint_l.jpg");
+    text-align: right;
+     }
+
+.img_text{
+    margin-right: 10px;
+}
+
+.nav_bar:first-child{float: left}
+
+.nav_bar{
+    font-family: 'Special Elite', cursive;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    text-align: left;
+    display: inline-block;
+    float: right;
+}
+
+
+.nav_bar a:hover {
+    text-decoration: none;
+}
+
+.nav_content {
+    color: seashell;
+    padding: 20px;
+    }
+
+.nav_content ul li:first-child { float: left; }
+
+.nav_content ul li {
+    list-style:none;
+    margin:10px;
+    float: right;
+
+}
+
+.nav_content ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav_content li{
+    //float: left;
+}
+
+.nav_content a {
+    color: seashell;
+}
+
+.nav_content li {
+    display: inline-block;
+}
+
+.nav_content h1 {
+    margin: 0;
+}
+
+
+
+.heading h1{
+    font-family: 'Special Elite', cursive;
+    font-size: 2em;
+    height: 80px;
+    margin-top: 3%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+
+.menu_pic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+            "b b b"
+            "m m p"
+}
+
+.banner {
+    grid-area: b;
+    //border: solid black 1px;
+}
+
+.pic {
+    grid-area: p;
+    //border: solid black 1px;
+    text-align: left;
+    margin-top: 60%;
+
+    }
+
+.menu {
+    grid-area: m;
+    //border: solid black 1px;
+
+}
+
 .article {
     display: grid;
     grid-template-columns: 80px 1fr 80px;
     grid-column-gap: 10px;
-    font-family: 'Special Elite', cursive;
     font-size: 1.5em;
+}
+
+.legacy_report{
+    font-family: 'Special Elite', cursive;
 }
 
 .article > * {
@@ -11,21 +147,10 @@
     min-width: 0;
 }
 
-.article h1{
-    text-align: center;
-    margin: 0;
-    font-size: 2.5em;
-}
-
 .article p{
-
     margin: 10px;
+}
 
-}
-.article > figure {
-    grid-column: 1 / -1;
-    margin: 2px 0;
-}
 
 .article > .aside {
     grid-column: 3;
@@ -34,17 +159,16 @@
 }
 
 
-/* General styling */
-
 html, body {
-    margin: 0;
-    padding: 0;
+    //margin: 0;
+    //padding: 0;
     line-height: 1.4;
 
 }
 
 body {
     margin: 0 10px;
+    font-family: 'Ubuntu', sans-serif;
 
 }
 
@@ -69,16 +193,13 @@ pre > code {
     padding: 0;
 }
 
-.figure {
-    vertical-align:middle;
-    text-align:center;
-    padding: 5px 5px 10px 5px;
-}
 
-.img {
-    width: 50%;
+
+.pic img {
+    width: 35%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 10% ;
 }
 
 figure figcaption {
@@ -87,15 +208,24 @@ figure figcaption {
     font-size: 0.8em;
 }
 footer .container {
-    height: 100%;
+
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(3, auto);
-    margin: 0 10px;
+    margin-top: 30px;
     font-family: 'Special Elite', cursive;
     font-size: 1em;
+    width: 100%;
+    height: 60px;
+    background-color: grey;
  }
 
 .container #right{
     text-align: right;
+}
+
+.contact {
+    padding-left: 20px ;
+    color: seashell;
+    text-decoration: none;
 }
