@@ -1,15 +1,46 @@
+.nav_bar_generic{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    grid-template-rows: 80px;
+    background-color: black;
+    color: seashell;
+    font-family: 'Special Elite', cursive;
+}
+
+.left_nav li{
+    color: seashell;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.nav_bar_generic a {
+
+    color: seashell;
+}
+
+.right_nav li{
+    color: seashell;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+
+.notes{
+    margin: 0 0 ;
+}
+
 .heading {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
     text-align: center;
-//height: 75%;
     width: 100%;
     margin: 0;
-//font-size: 1.5em;
     background-image: url("img/HOMOdendaal_Mustang_Web.jpg");
     background-repeat: no-repeat;
-    /*background-size: 100%;*/
     background-size: contain;
     background-position: center center;
 }
@@ -49,7 +80,6 @@
     float: right;
 }
 
-
 .nav_bar a:hover {
     text-decoration: none;
 }
@@ -68,15 +98,30 @@
 
 }
 
+.first_p{
+    margin-top: 100px;
+}
+
+.nav_content ol li:first-child { float: left; }
+
+.nav_content ol li {
+    list-style:none;
+    margin:10px;
+    float: right;
+    align-items: center;
+
+}
+
+.nav_content ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .nav_content ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-}
-
-.nav_content li{
-    //float: left;
 }
 
 .nav_content a {
@@ -91,8 +136,6 @@
     margin: 0;
 }
 
-
-
 .heading h1{
     font-family: 'Special Elite', cursive;
     font-size: 2em;
@@ -101,7 +144,6 @@
     margin-left: 5%;
     text-align: left;
 }
-
 
 .menu_pic {
     display: grid;
@@ -140,6 +182,12 @@
 
 .legacy_report{
     font-family: 'Special Elite', cursive;
+    //border: solid black 1px;
+    margin: 5px;
+    padding: 5px;
+    background-image: url("img/sepia.jpg");
+    background-repeat: repeat;
+    background-size: auto;
 }
 
 .article > * {
