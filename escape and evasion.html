@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111676061-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111676061-1');
+    </script>
     <title>Escape and Evasion Report</title>
     <!--  Meta  -->
     <meta charset="UTF-8" />
@@ -19,38 +28,43 @@
 
         <div class="nav_bar_generic" role="navigation">
 
-            <ol class="left_nav">
-                <li><a href="#top"><h3>Top</h3></a></li>
-                <li><a href="index.html"><h3>Home</h3></a></li>
-            </ol>
+            <h1> Escape and Evasion Report</h1>
 
-            <h1 class="center_nav"> Escape and Evasion</h1>
-
-            <ol class="right_nav">
-                <li><a href="#report"><h3>Report</h3></a></li>
-            </ol>
+            <div class="nav_content">
+                <ol>
+                    <li><a href="index.html"><h3>Home</h3></a></li>
+                    <li><a href="#top"><h3>Top</h3></a></li>
+                    <li><a href="#report"><h3>Report</h3></a></li>
+                    <li><a href="#newspaper_clippings"><h3>News Articles</h3></a></li>
+                    <li><a href="#caterpillar_club"><h3>Caterpillar Club</h3></a></li>
+                </ol>
+            </div>
         </div>
 
 
-    <div class="article first_p" >
 
-        <p >
-            The following document is the verbatim copy of Maj Odendaal's report of his Escape and Evasion activity
-            after being shot
-            down by ground fire while flying an operational sortie.
+        <div class="article first_paragraph" id="report">
+
+        <p>
+            Maj Odendaal was shot down on the 3rd of April, 1945, while flying an operational sortie in the area of
+            <a target="_blank" href="https://www.google.com/maps/place/2370+Dravograd,+Slovenia/@46.5891712,15.0046328,14z/data=!3m1!4b1!4m5!3m4!1s0x476ff03137c5d74f:0x3711bb5206e066d2!8m2!3d46.589219!4d15.0246021">
+                Dravograd</a>
+            , Slovenia (Yugoslavia).
         </p>
 
         <p>
-           The crash site area Grid coordinates are: RD7445, this is RAF special map reference,
-           translated -
+           The crash site area Grid coordinates are RAF special map reference: RD7445 -
             <a target="_blank" href="https://www.google.com/maps/place/46%C2%B017'34.3%22N+14%C2%B057'42.4%22E/@46.2928731,14.9595946,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d46.2928694!4d14.9617833?hl=en&authuser=0">
-                46°17'34.33"N, 14°57'42.42"E</a>
+             46°17'34.33"N, 14°57'42.42"E</a>
         </p>
 
+        <p>
+            The following document is the verbatim copy of Maj Odendaal's report of his Escape and Evasion activity.
+        </p>
 
-<div class="legacy_report" id="report">
+<div class="legacy_report" >
 
-    <h3> Report on Evasion and escape of Major H.O.M. Odendaal. DFC </h3>
+    <h3 > Report on Evasion and escape of Major H.O.M. Odendaal. DFC </h3>
 
     <h4>No. 103164 V Major H.O.M Odendaal, DFC, states:- </h4>
 
@@ -177,22 +191,73 @@
             <li>Y/S – Yugoslav</li>
          </ol>
 
+        <div class="sub_article  retro" id="newspaper_clippings">
+            <h2>
+                News Articles
+            </h2>
 
-        <figure class="embed_pic" id="blank">
+            <div class="article_holder_1fr_2fr">
+               <div class="picture_block">
+                    <img class="cutting" src="docs/reported_missing.jpg" alt="mia report">
+                         <p>
+                            South African Cape Times
+                            </p>
+               </div>
+                <div class="text_block">
+                    <p>some newspaper text</p>
+                </div>
+            </div>
+        </div>
 
-            <figcaption class="img_text"> image placeholder <a target="_blank" href=" ">
-            </a></figcaption>
-        </figure>
+        <div class="sub_article retro" id="caterpillar_club">
+            <h2>
+                Caterpillar Club
+            </h2>
+
+            <div class="article_holder_half_1fr__half">
+
+                <div class="picture_block">
+                    <img class="cutting img_caterpillar" src="img/caterpillar_club_pin.jpg" alt="caterpillar pin">
+                    <p>
+                        Caterpillar club pin
+                    </p>
+
+                </div>
+
+                <div class="text_block">
+
+                    <p>some caterpillar text</p>
+
+                </div>
+
+                <div class="picture_block">
+
+                    <img class="cutting" src="docs/caterpillar_card.jpg" alt="caterpillar club card">
+                    <p>
+                        Membership Card
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--<figure class="embed_pic" id="blank">-->
+
+            <!--<figcaption class="img_text"> image placeholder <a target="_blank" href=" ">-->
+            <!--</a></figcaption>-->
+        <!--</figure>-->
 
 
 </div>
 
-<footer>
-    <div class="container">
-        <p class="contact"> Contact:
-            tank.odendaal@gmail.com</p>
-    </div>
-</footer>
+        <footer>
+            <div class="container">
+                <p class="contact"> Contact:
+                    tank.odendaal@gmail.com</p>
+                <p><a href="about.html">About This Site</a></p>
+            </div>
+        </footer>
 
 </body>
 
